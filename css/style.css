@@ -128,15 +128,19 @@ body {
     height: 76vh;
     border: solid 1.5px #eaebee;
     border-radius: 4px; }
-    .results-body h3 {
+    .results-body .h3 {
       margin-top: 2.7rem;
       margin-left: 2.5rem;
+      margin-right: 2.5rem;
       margin-bottom: 2.2rem;
-      height: 2.3rem;
-      font-size: 1.9rem;
-      font-weight: bold;
-      letter-spacing: 0.13px;
       color: #1a173b; }
+      .results-body .h3 h3 {
+        height: 2.3rem;
+        font-size: 1.9rem;
+        font-weight: bold;
+        letter-spacing: 0.13px; }
+      .results-body .h3 i {
+        color: #5e636b; }
     .results-body .inputs .search {
       margin-left: 2.5rem;
       margin-bottom: 1rem;

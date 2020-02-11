@@ -219,15 +219,23 @@ body {
     border: solid 1.5px #eaebee;
     border-radius: 4px;
 
-    & h3 {
+    & .h3 {
       margin-top: 2.7rem;
       margin-left: 2.5rem;
+      margin-right: 2.5rem;
       margin-bottom: 2.2rem;
-      height: 2.3rem;
-      font-size: 1.9rem;
-      font-weight: bold;
-      letter-spacing: 0.13px;
       color: #1a173b;
+
+      & h3 {
+        height: 2.3rem;
+        font-size: 1.9rem;
+        font-weight: bold;
+        letter-spacing: 0.13px;
+      }
+
+      & i {
+          color: #5e636b;
+      }
     }
 
     & .inputs {
