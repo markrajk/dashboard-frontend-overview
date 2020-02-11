@@ -100,8 +100,9 @@ body {
     height: 2rem;
     margin: 0;
     font-size: 1.5rem;
-    font-weight: 600;
-    color: #6e747e; }
+    font-weight: 600; }
+    .results-header-logout a {
+      color: #6e747e; }
     .results-header-logout i {
       margin-top: 0;
       margin-left: -3px;
@@ -206,6 +207,9 @@ body {
           top: -4.7rem;
           color: #5e636b;
           background-color: #FFF; }
+          .results-body .table table thead i {
+            font-size: 2rem;
+            color: #5e636b; }
         .results-body .table table tbody {
           max-height: 100%;
           color: #000a19; }
@@ -225,6 +229,8 @@ body {
             width: 2.5rem; }
           .results-body .table table tr .checkbox {
             width: 4rem; }
+            .results-body .table table tr .checkbox input {
+              margin-top: .5rem; }
           .results-body .table table tr .team-edit .link-disabled {
             text-decoration: none;
             color: rgba(0, 0, 0, 0.42);
