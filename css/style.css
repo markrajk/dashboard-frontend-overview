@@ -180,22 +180,26 @@ body {
         color: rgba(0, 0, 0, 0.75);
         border-radius: 1.7rem;
         border: solid 1.5px rgba(0, 0, 0, 0.1); }
-    .results-body .table {
+    .results-body .table-wrapper {
       position: relative;
+      height: calc(100% - 11.7rem - 6.9rem - .7rem - 4.7rem); }
+    .results-body .table {
+      margin-top: 4.7rem;
       margin-bottom: 0;
-      min-height: calc(100% - 11.7rem - 6.9rem - .7rem);
-      max-height: calc(100% - 11.7rem - 6.9rem - .7rem);
+      min-height: 100%;
+      max-height: 100%;
       font-size: 1.4rem;
-      overflow: auto; }
+      overflow-y: auto; }
       .results-body .table table {
         width: 100%; }
         .results-body .table table thead {
-          width: 100%;
-          bottom: 0;
-          color: #5e636b; }
+          position: absolute;
+          width: calc(100% - 17px);
+          top: 0;
+          color: #5e636b;
+          background-color: #FFF; }
         .results-body .table table tbody {
           max-height: 100%;
-          overflow-y: scroll;
           color: #000a19; }
         .results-body .table table tr {
           height: 4.7rem;
