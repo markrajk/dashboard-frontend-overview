@@ -190,12 +190,14 @@ body {
       max-height: 100%;
       font-size: 1.4rem;
       overflow-y: auto; }
+      .results-body .table::-webkit-scrollbar-track {
+        margin: 100px 0; }
       .results-body .table table {
         width: 100%; }
         .results-body .table table thead {
           position: absolute;
-          width: calc(100% - 17px);
-          top: 0;
+          width: 100%;
+          top: -4.7rem;
           color: #5e636b;
           background-color: #FFF; }
         .results-body .table table tbody {
