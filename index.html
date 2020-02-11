@@ -428,6 +428,25 @@
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        const isOverflown = (clientHeight, scrollHeight) => {
+            return scrollHeight > clientHeight;
+        }
+        
+
+       const onResize = () => {
+            let bool = isOverflown(document.querySelector('.table').clientHeight, document.querySelector('.table').scrollHeight);
+            if(bool) {
+                document.querySelector('thead').style.width = 'calc(100% - 1.7rem - 3px)';
+            } else {
+                document.querySelector('thead').style.width = 'calc(100%  - 3px)'
+            }
+       }
+       onResize()
+
+        window.addEventListener("resize", onResize);
+    </script>
 </body>
 
 </html>
