@@ -294,8 +294,8 @@ body {
     & .table {
         position: relative;
         margin-bottom: 0;
-        min-height: calc(100% - 11.7rem - 6.9rem);
-        max-height: calc(100% - 11.7rem - 6.9rem);
+        min-height: calc(100% - 11.7rem - 6.9rem - .7rem);
+        max-height: calc(100% - 11.7rem - 6.9rem - .7rem);
         font-size: 1.4rem;
       overflow: auto;
 
