@@ -305,6 +305,8 @@ table.flex-table tr th {
   justify-content: start; }
 
 table.flex-table tr th {
+  border: none !important;
+  border-bottom: 1.5px solid #eaebee !important;
   font-size: 1.4rem;
   color: #5e636b; }
 
