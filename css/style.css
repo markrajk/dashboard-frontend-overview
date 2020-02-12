@@ -283,7 +283,15 @@ table.flex-table thead {
 table.flex-table tbody {
   flex: 1;
   max-height: 52vh;
-  overflow-y: scroll; }
+  overflow-y: auto;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */ }
+  table.flex-table tbody::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0; }
 
 table.flex-table tr {
   width: 100%;
