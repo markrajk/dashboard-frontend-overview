@@ -1,11 +1,14 @@
 html {
   font-size: 62.5%; }
-  @media (max-width: 1500px) {
+  @media (max-width: 1800px) {
     html {
       font-size: 58%; } }
-  @media (max-width: 991px) {
+  @media (max-width: 1500px) {
     html {
       font-size: 53%; } }
+  @media (max-width: 991px) {
+    html {
+      font-size: 48%; } }
 
 body {
   width: 100%;
@@ -91,38 +94,49 @@ body {
       font-weight: 700; }
 
 .results {
-  font-family: "Lato", sans-serif;
+  position: relative;
   width: 100%;
   margin-left: 24.4rem;
   background-color: #f8f9fb;
-  padding: 4.1rem 4.6rem 2.8rem 3.4rem; }
-  .results-header-logout {
-    height: 2rem;
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: 600; }
-    .results-header-logout a {
-      color: #6e747e; }
-    .results-header-logout i {
-      margin-top: 0;
-      margin-left: -3px;
-      font-size: 1.8rem;
-      color: #6e747e; }
-  .results-header h2 {
-    height: 3.7rem;
-    margin: 0;
-    font-size: 2.7rem;
-    font-weight: 600;
-    line-height: 1.37;
-    color: #1a173b; }
-  .results-header .choose {
-    margin: 2.2rem 0;
-    font-size: 1.6rem;
-    color: #878590; }
-    .results-header .choose a {
-      font-weight: 700;
+  padding: 0 4.6rem 2.8rem 3.4rem; }
+  .results-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 24.4rem);
+    height: 17rem;
+    margin-left: 24.4rem;
+    padding: 4.1rem 4.6rem 0 3.4rem;
+    background-color: #f8f9fb;
+    z-index: 500; }
+    .results-header-logout {
+      height: 2rem;
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 600; }
+      .results-header-logout a {
+        color: #6e747e; }
+      .results-header-logout i {
+        margin-top: 0;
+        margin-left: -3px;
+        font-size: 1.8rem;
+        color: #6e747e; }
+    .results-header h2 {
+      height: 3.7rem;
+      margin: 0;
+      font-size: 2.7rem;
+      font-weight: 600;
+      line-height: 1.37;
       color: #1a173b; }
+    .results-header .choose {
+      margin: 2.2rem 0;
+      font-size: 1.6rem;
+      color: #878590; }
+      .results-header .choose a {
+        font-weight: 700;
+        color: #1a173b; }
   .results-body {
+    margin-top: 16.9rem;
     font-family: "Lato", sans-serif;
     width: 100%;
     min-height: 58.7rem;
@@ -204,12 +218,15 @@ body {
         .results-body .table table thead {
           position: absolute;
           width: 100%;
-          top: -4.7rem;
+          top: -4.65rem;
           color: #5e636b;
           background-color: #FFF; }
           .results-body .table table thead i {
             font-size: 2rem;
             color: #5e636b; }
+          .results-body .table table thead td {
+            border-top: none;
+            border-bottom: 1px solid #dee2e6; }
         .results-body .table table tbody {
           max-height: 100%;
           color: #000a19; }

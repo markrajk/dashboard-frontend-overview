@@ -41,12 +41,16 @@ $red-gradient: linear-gradient(#fa2020, #ef0049);
 html {
   font-size: 62.5%;
   //font-size: 68%;
-  @include respond(desktop-xl) {
+  @include respond(desktop-xxl) {
     font-size: 58%;
   }
 
-  @include respond(desktop-md) {
+  @include respond(desktop-xl) {
     font-size: 53%;
+  }
+
+  @include respond(desktop-md) {
+    font-size: 48%;
   }
 }
 
@@ -174,13 +178,24 @@ body {
 }
 
 .results {
-  font-family: "Lato", sans-serif;
+  position: relative;
   width: 100%;
   margin-left: 24.4rem;
   background-color: #f8f9fb;
-  padding: 4.1rem 4.6rem 2.8rem 3.4rem;
+  padding: 0 4.6rem 2.8rem 3.4rem;
 
   &-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 24.4rem);
+    height: 17rem;
+    margin-left: 24.4rem;
+    padding: 4.1rem 4.6rem 0 3.4rem;
+    background-color: #f8f9fb;
+    //border-bottom: 1px solid #dee2e6;
+    z-index: 500;
+
     &-logout {
       height: 2rem;
       margin: 0;
@@ -219,6 +234,7 @@ body {
     }
   }
   &-body {
+    margin-top: 16.9rem;
     font-family: "Lato", sans-serif;
     width: 100%;
     min-height: 58.7rem;
@@ -344,7 +360,7 @@ body {
         & thead {
             position: absolute;
             width: 100%;
-            top: -4.7rem;
+            top: -4.65rem;
             color: #5e636b;
             background-color: #FFF;
 
@@ -352,6 +368,12 @@ body {
               font-size:2rem;
               color: #5e636b;
             }
+
+            & td {
+              border-top: none ;
+              border-bottom: 1px solid #dee2e6 ;
+            }
+
         }
 
         & tbody {

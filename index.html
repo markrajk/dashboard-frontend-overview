@@ -123,15 +123,15 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <td class="border-top-0 border-bottom filler-left"></td>
-                                    <td class="border-top-0 border-bottom checkbox"></td>
-                                    <td class="border-top-0 border-bottom team-name">Name of team</td>
-                                    <td class="border-top-0 border-bottom team-lead-name d-none d-xl-table-cell">Team lead</td>
-                                    <td class="border-top-0 border-bottom team-size d-none d-lg-table-cell"><a href="#"><i class="material-icons align-middle">arrow_downward</i></a> Team size</td>
-                                    <td class="border-top-0 border-bottom team-index">Team index</td>
-                                    <td class="border-top-0 border-bottom team-lead-rating">Team lead</td>
-                                    <td class="border-top-0 border-bottom team-view">View team</td>
-                                    <td class="border-top-0 border-bottom team-edit">Edit team</td>
+                                    <td class="filler-left"></td>
+                                    <td class="checkbox"></td>
+                                    <td class="team-name">Name of team</td>
+                                    <td class="team-lead-name d-none d-xl-table-cell">Team lead</td>
+                                    <td class="team-size d-none d-lg-table-cell"><a href="#"><i class="material-icons align-middle">arrow_downward</i></a> Team size</td>
+                                    <td class="team-index">Team index</td>
+                                    <td class="team-lead-rating">Team lead</td>
+                                    <td class="team-view">View team</td>
+                                    <td class="team-edit">Edit team</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -438,9 +438,9 @@
        const onResize = () => {
             let bool = isOverflown(document.querySelector('.table').clientHeight, document.querySelector('.table').scrollHeight);
             if(bool) {
-                document.querySelector('thead').style.width = 'calc(100% - 1.7rem - 3px)';
+                document.querySelector('thead').style.width = 'calc(100% - 1.7rem)';
             } else {
-                document.querySelector('thead').style.width = 'calc(100%  - 3px)'
+                document.querySelector('thead').style.width = 'calc(100%)'
             }
        }
        onResize()
