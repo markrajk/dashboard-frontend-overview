@@ -137,13 +137,13 @@ body {
         font-weight: 700;
         color: #1a173b; }
   .results-body {
-    margin-top: 16.9rem;
+    margin-top: 17rem;
     font-family: "Lato", sans-serif;
     width: 100%;
-    min-height: 58.7rem;
-    height: 76vh;
-    border: solid 1.5px #eaebee;
-    border-radius: 4px; }
+    height: auto;
+    border: solid 2px #eaebee;
+    border-radius: 4px;
+    background-color: #FFF; }
     .results-body .h3 {
       margin-top: 2.7rem;
       margin-left: 2.5rem;
@@ -204,64 +204,21 @@ body {
           outline: none; }
     .results-body .table-wrapper {
       position: relative;
-      height: calc(100% - 11.7rem - 6.9rem - .7rem - 4.7rem); }
+      height: auto; }
     .results-body .table {
       margin-top: 4.7rem;
       margin-bottom: 0;
-      min-height: 100%;
+      height: 100%;
       max-height: 100%;
       font-size: 1.4rem;
       overflow-y: auto; }
-      .results-body .table::-webkit-scrollbar-track {
-        margin: 100px 0; }
-      .results-body .table table {
-        width: 100%; }
-        .results-body .table table thead {
-          position: absolute;
-          width: 100%;
-          top: -4.65rem;
-          left: 0;
-          color: #5e636b;
-          background-color: #FFF; }
-          .results-body .table table thead i {
-            font-size: 2rem;
-            color: #5e636b; }
-          .results-body .table table thead td {
-            border-top: none;
-            border-bottom: 1px solid #dee2e6; }
-            .results-body .table table thead td:first-child {
-              border-left: 1.5px solid #dee2e6; }
-        .results-body .table table tbody {
-          max-height: 100%;
-          color: #000a19; }
-        .results-body .table table tr {
-          height: 4.7rem;
-          display: table;
-          width: 100%;
-          table-layout: fixed; }
-          .results-body .table table tr.active {
-            background-color: #f2f2f2; }
-          .results-body .table table tr td {
-            display: table-cell;
-            padding-left: 0;
-            padding-right: 0;
-            vertical-align: middle; }
-          .results-body .table table tr .filler-left {
-            width: 2.5rem; }
-          .results-body .table table tr .checkbox {
-            width: 4rem; }
-            .results-body .table table tr .checkbox input {
-              margin-top: .5rem; }
-          .results-body .table table tr .team-edit .link-disabled {
-            text-decoration: none;
-            color: rgba(0, 0, 0, 0.42);
-            cursor: not-allowed; }
       .results-body .table-footer {
         padding: 0 3rem !important;
         font-size: 1.4rem;
         color: #5E636B;
         width: 100%;
-        height: 6.9rem; }
+        height: 6.9rem;
+        border-top: 1.5px solid #eaebee; }
         .results-body .table-footer p {
           margin-bottom: 0; }
         .results-body .table-footer select {
@@ -298,3 +255,64 @@ body {
           background: linear-gradient(#f5e144, #ffa30f); }
         .results-body .table .btn-table-red {
           background: linear-gradient(#fa2020, #ef0049); }
+
+.panel-body {
+  height: auto; }
+
+table i {
+  font-size: 2rem;
+  color: #5e636b; }
+
+table thead tr {
+  height: 5rem;
+  /* Fixed Row Height */ }
+
+/* Flex Table */
+table.flex-table {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
+table.flex-table thead,
+table.flex-table tbody {
+  display: block; }
+
+table.flex-table thead {
+  margin-right: 0px; }
+
+table.flex-table tbody {
+  flex: 1;
+  max-height: 52vh;
+  overflow-y: scroll; }
+
+table.flex-table tr {
+  width: 100%;
+  display: flex; }
+
+table.flex-table tr td,
+table.flex-table tr th {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: start; }
+
+table.flex-table tr th {
+  border: none !important;
+  border-bottom: 1.5px solid #eaebee !important; }
+  table.flex-table tr th td {
+    border-top: none !important;
+    border-bottom: 1px solid #dee2e6; }
+
+.table-row {
+  margin-top: -4rem; }
+
+.spacer-left {
+  flex: 0.05 !important;
+  width: 25px !important; }
+
+.spacer-right {
+  flex: 0.02 !important; }
+
+.checkbox {
+  flex: 0.1 !important;
+  width: 25px !important; }

@@ -232,13 +232,15 @@ body {
     }
   }
   &-body {
-    margin-top: 16.9rem;
+    margin-top: 17rem;
     font-family: "Lato", sans-serif;
     width: 100%;
-    min-height: 58.7rem;
-    height: 76vh;
-    border: solid 1.5px #eaebee;
+    //min-height: 58.7rem;
+    //max-height: 76vh;
+    height: auto;
+    border: solid 2px #eaebee;
     border-radius: 4px;
+    background-color: #FFF;
 
     & .h3 {
       margin-top: 2.7rem;
@@ -328,21 +330,19 @@ body {
 
     & .table-wrapper {
         position: relative;
-        height: calc(100% - 11.7rem - 6.9rem - .7rem - 4.7rem)
+        //height: calc(100% - 11.7rem - 6.9rem - .7rem - 4.7rem)
+        height: auto;
     }
 
     & .table {
         //position: relative;
         margin-top: 4.7rem;
         margin-bottom: 0;
-        min-height: 100%;
+        height: 100%;
         max-height: 100%;
         font-size: 1.4rem;
         overflow-y: auto;
         
-        &::-webkit-scrollbar-track {
-            margin: 100px 0;
-        }
 
         // scrollbar-width: none; /* Firefox */
         // -ms-overflow-style: none;  /* Internet Explorer 10+ */
@@ -352,82 +352,7 @@ body {
         //     height: 0;
         // }
 
-      & table {
-        width: 100%;
 
-        & thead {
-            position: absolute;
-            width: 100%;
-            top: -4.65rem;
-            left: 0;
-            color: #5e636b;
-            background-color: #FFF;
-
-            & i {
-              font-size:2rem;
-              color: #5e636b;
-            }
-
-            & td {
-              border-top: none ;
-              border-bottom: 1px solid #dee2e6 ;
-  
-              &:first-child {
-                border-left: 1.5px solid #dee2e6;
-              }
-            }
-
-           
-        }
-
-        & tbody {
-            max-height: 100%;
-            color: #000a19;
-        }
-
-        & tr {
-            height: 4.7rem;
-            display: table;
-            width: 100%;
-            table-layout: fixed;
-
-            &.active {
-                background-color: #f2f2f2;
-            }
-
-            & td {
-                display: table-cell;
-                padding-left: 0;
-                padding-right: 0;
-                vertical-align: middle;
-            }
-
-            & .filler-left {
-                width: 2.5rem
-            }
-
-            & .checkbox {
-                width: 4rem;
-
-                & input {
-                  margin-top: .5rem;
-                }
-            }
-
-            // & .team-name {
-            //     font-weight: 700;
-            // }
-            // & .team-lead-name {
-            //     font-weight: 700;
-            // }
-
-            & .team-edit .link-disabled {
-                text-decoration: none;
-                color: rgba(0,0,0, .42);
-                cursor: not-allowed;
-            }
-        }
-      }
 
       &-footer {
         padding: 0 3rem!important;
@@ -435,6 +360,7 @@ body {
         color: #5E636B;
         width: 100%;
         height: 6.9rem;
+        border-top: 1.5px solid #eaebee;
 
         & p {
             margin-bottom: 0;
@@ -489,3 +415,81 @@ body {
     }
   }
 }
+
+
+.panel-body {
+  height: auto;
+ 
+}
+
+table {
+  // border-top: 1px solid black;    /* Just to Highlight Top of Table */
+  & i {
+    font-size:2rem;
+    color: #5e636b;
+  }
+}
+table thead tr {
+  height: 5rem;    /* Fixed Row Height */
+}
+
+/* Flex Table */
+table.flex-table {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+table.flex-table thead,
+table.flex-table tbody {
+  display: block;
+}
+table.flex-table thead {
+  margin-right: 0px;
+}
+table.flex-table tbody {
+  flex: 1;
+  max-height: 52vh;
+  overflow-y: scroll;
+}
+table.flex-table tr {
+  width: 100%;
+  display: flex;
+}
+table.flex-table tr td,
+table.flex-table tr th {
+  display: flex;
+  flex: 1;
+  align-items:center;
+  justify-content:start;
+}
+
+table.flex-table tr th {
+  border: none!important;
+  border-bottom: 1.5px solid #eaebee!important;
+
+  & td {
+    border-top: none !important;
+    border-bottom: 1px solid #dee2e6 ;}
+}
+
+.table-row {
+  margin-top: -4rem;
+}
+
+.spacer-left {
+  // display: block;
+  flex: .05!important;
+  width: 25px!important;
+}
+
+.spacer-right {
+  flex: .02!important;
+}
+
+.checkbox {
+  flex: .1!important;
+  width: 25px!important;
+}
+// .spacer-left {
+//   width: 1.7rem;
+// }
