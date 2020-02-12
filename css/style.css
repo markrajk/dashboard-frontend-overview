@@ -305,11 +305,8 @@ table.flex-table tr th {
   justify-content: start; }
 
 table.flex-table tr th {
-  border: none !important;
-  border-bottom: 1.5px solid #eaebee !important; }
-  table.flex-table tr th td {
-    border-top: none !important;
-    border-bottom: 1px solid #dee2e6; }
+  font-size: 1.4rem;
+  color: #5e636b; }
 
 .table-row {
   margin-top: -4rem; }
