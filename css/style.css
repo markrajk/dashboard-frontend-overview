@@ -272,6 +272,7 @@ body {
     flex: 1;
     max-height: calc(100vh - 14.4rem - 2.8rem - 6.9rem - 12.2rem - 6.9rem - 3rem);
     overflow-y: auto;
+    overflow-x: hidden;
     scrollbar-width: none;
     /* Firefox */
     -ms-overflow-style: none;
