@@ -82,7 +82,7 @@
                     <p class="text-right align-middle"><a href="#">Logout</a> <i class="material-icons align-middle">exit_to_app</i></p>
                 </div>
                 <h2 class="mt-1 align-middle">Overview</h2>
-                <p class="choose">My teams <span class="mx-1">|</span> <a href="#">Allteams</a></span></p>
+                <p class="choose">My teams <span class="mx-2 divider"> I </span> <a href="#">All teams</a></span></p>
                 <!-- <p class="choose"><span>My key people </span><span class="px-1">|</span> All people</p> -->
                 <!-- <div class="results-header-search">
                     <div class="input-group h-100">
@@ -94,27 +94,30 @@
             <div class="results-body">
 
                 
-                <div class="h3 d-flex justify-content-between">
+                <div class="h3 d-flex">
                     <h3>All teams of our company</h3>
-                    <div>
+                    <!-- <div>
                         <a href="#"><i class="material-icons d-none d-sm-inline-block">filter_list</i></a>
                         <a href="#"><i class="material-icons ml-2 d-none d-sm-inline-block">more_vert</i></a>
-                    </div>
+                    </div> -->
                 </div>
                 
 
-                <div class="inputs d-flex">
-                    <div class="search">
-                        <i class="material-icons">search</i>
-                        <input class="m-auto" type="text" placeholder="Search...">
+                <div class="inputs d-flex justify-content-between">
+                    <div class="d-flex">
+                        <div class="search">
+                            <i class="material-icons">search</i>
+                            <input class="m-auto" type="text" placeholder="Search...">
+                        </div>
+                        <div class="select d-none d-md-block">
+                            <select name="category" id="category">
+                                <option value="1" selected>All categories</option>
+                                <option value="2" selected>All categories</option>
+                                <option value="3" selected>All categories</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="select d-none d-md-block">
-                        <select name="category" id="category">
-                            <option value="1" selected>All categories</option>
-                            <option value="2" selected>All categories</option>
-                            <option value="3" selected>All categories</option>
-                        </select>
-                    </div>
+                    <button>Open on a new tab</button>
                 </div>
                 <!-- TABLE SECTION -->
                     <div class="row table-row">
@@ -124,15 +127,15 @@
                             <table class="table flex-table">
                               <thead>
                                 <tr>
-                                    <th class="border-0 border-bottom spacer-left"></th>
-                                    <th class="border-0 border-bottom checkbox"></th>
-                                    <th class="border-0 border-bottom team-name">Name of team</th>
-                                    <th class="border-0 border-bottom team-lead-name d-none d-xl-flex">Team lead</th>
-                                    <th class="border-0 border-bottom team-size d-none d-lg-flex"><a href="#"><i class="material-icons align-middle">arrow_downward</i></a> Team size</th>
-                                    <th class="border-0 border-bottom team-index">Team index</th>
-                                    <th class="border-0 border-bottom team-lead-rating d-none d-md-flex">Team lead</th>
-                                    <th class="border-0 border-bottom team-view d-none d-sm-inline-block">View team</th>
-                                    <th class="border-0 border-bottom team-edit d-none d-sm-inline-block">Edit team</th>
+                                    <th class=" spacer-left"></th>
+                                    <th class=" checkbox"></th>
+                                    <th class=" team-name">Name of team</th>
+                                    <th class=" team-lead-name d-none d-xl-flex">Team lead</th>
+                                    <th class=" team-size d-none d-lg-flex"><a href="#"><i class="material-icons align-middle">arrow_downward</i></a> Team size</th>
+                                    <th class=" team-index">Team index</th>
+                                    <th class=" team-lead-rating d-none d-md-flex">Team lead</th>
+                                    <th class=" team-view d-none d-sm-inline-block">View team</th>
+                                    <th class=" team-edit d-none d-sm-inline-block">Edit team</th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -407,14 +410,9 @@
                     </div>
                 <!-- <div class="table-footer"></div> -->
                 <div class="table-footer bg-white d-flex justify-content-end align-items-center">
-                    <p class="align-middle d-none d-md-block">Rows per page</p>
-                    <select class="ml-5 mr-5 d-none d-md-block">
-                        <option selected>10</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                    <p class="align-middle mx-4">1-8 of 120</p>
+                    <p class="align-middle d-none d-md-block mr-4">Rows per page <span class="ml-2">20</span></p>
+
+                    <p class="align-middle mx-5">page <span class="mx-1">1</span> of <span class="mx-1">1</span></p>
                     <div>
                         <a href="#"><i class="material-icons text-left align-middle disabled">keyboard_arrow_left</i></a>
                         <a href="#"><i class="material-icons text-right align-middle ml-2">keyboard_arrow_right</i></a>

@@ -129,6 +129,9 @@ body {
       margin: 2.2rem 0;
       font-size: 1.6rem;
       color: #878590; }
+      .results-header .choose .divider {
+        color: #1a173b;
+        font-weight: 700; }
       .results-header .choose a {
         font-weight: 700;
         color: #1a173b; }
@@ -154,7 +157,7 @@ body {
         color: #5e636b; }
     .results-body .inputs .search {
       margin-left: 2.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       position: relative;
       width: 26.3rem; }
       .results-body .inputs .search input {
@@ -198,6 +201,17 @@ body {
         -webkit-appearance: none; }
         .results-body .inputs .select select:focus {
           outline: none; }
+    .results-body .inputs button {
+      margin-right: 2.5rem;
+      width: 15.3rem;
+      height: 3.5rem;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff;
+      background-color: #0077FF;
+      border-radius: 4px;
+      border: none;
+      outline: none; }
     .results-body .table {
       margin-bottom: 0;
       height: 100%;
@@ -268,6 +282,9 @@ body {
     display: block; }
   .panel-body table.flex-table thead {
     margin-right: 0px; }
+    .panel-body table.flex-table thead tr > th {
+      border-bottom: 1.5px solid #dee2e6;
+      border-top: none; }
   .panel-body table.flex-table tbody {
     flex: 1;
     max-height: calc(100vh - 14.4rem - 2.8rem - 6.9rem - 12.2rem - 6.9rem - 3rem);
@@ -281,6 +298,10 @@ body {
       /* WebKit */
       width: 0;
       height: 0; }
+    .panel-body table.flex-table tbody tr > td {
+      border-top: none; }
+    .panel-body table.flex-table tbody tr:not(:last-child) > td {
+      border-bottom: 1.5px solid #dee2e6; }
   .panel-body table.flex-table tr {
     width: 100%;
     display: flex; }
@@ -290,9 +311,9 @@ body {
     flex: 1;
     align-items: center;
     justify-content: start; }
-  .panel-body table.flex-table tr {
+  .panel-body table.flex-table .panel-body table tbody > tr {
     border: none !important;
-    border-bottom: 1px solid #dee2e6 !important;
+    border-bottom: 1.5px solid #dee2e6 !important;
     font-size: 1.4rem;
     color: #5e636b; }
   .panel-body table .checkbox {
