@@ -324,7 +324,7 @@ body {
         width: 15.3rem;
         height: 3.5rem;
         font-size: 1.4rem;
-        font-weight: 700;
+        font-weight: 400;
         color: #fff;
         background-color: #0077FF;
         border-radius: 4px;
@@ -441,7 +441,7 @@ body {
       margin-right: 0px;
 
       & tr > th {
-        border-bottom: 1.5px solid #dee2e6;
+        border-bottom: 1.5px solid #eaebee;
         border-top: none;
       }
     }
@@ -464,7 +464,7 @@ body {
       }
 
       & tr:not(:last-child) > td {
-        border-bottom: 1px solid #dee2e6;
+        border-bottom: 1px solid #eaebee;
       }
     }
     &.flex-table tr {
@@ -512,7 +512,7 @@ body {
 
     &.flex-table & tbody > tr  {
       border: none !important;
-      border-bottom: 1px solid #dee2e6 !important;
+      border-bottom: 1px solid #eaebee !important;
       font-size: 1.4rem;
       color: #5e636b;
     }

@@ -206,7 +206,7 @@ body {
       width: 15.3rem;
       height: 3.5rem;
       font-size: 1.4rem;
-      font-weight: 700;
+      font-weight: 400;
       color: #fff;
       background-color: #0077FF;
       border-radius: 4px;
@@ -285,7 +285,7 @@ body {
   .panel-body table.flex-table thead {
     margin-right: 0px; }
     .panel-body table.flex-table thead tr > th {
-      border-bottom: 1.5px solid #dee2e6;
+      border-bottom: 1.5px solid #eaebee;
       border-top: none; }
   .panel-body table.flex-table tbody {
     flex: 1;
@@ -303,7 +303,7 @@ body {
     .panel-body table.flex-table tbody tr > td {
       border-top: none; }
     .panel-body table.flex-table tbody tr:not(:last-child) > td {
-      border-bottom: 1px solid #dee2e6; }
+      border-bottom: 1px solid #eaebee; }
   .panel-body table.flex-table tr {
     width: 100%;
     display: flex; }
@@ -315,7 +315,7 @@ body {
     justify-content: start; }
   .panel-body table.flex-table .panel-body table tbody > tr {
     border: none !important;
-    border-bottom: 1px solid #dee2e6 !important;
+    border-bottom: 1px solid #eaebee !important;
     font-size: 1.4rem;
     color: #5e636b; }
   .panel-body table .checkbox {
