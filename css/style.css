@@ -264,6 +264,8 @@ body {
 
 .panel-body table {
   /* Flex Table */ }
+  .panel-body table tbody > tr.active {
+    background-color: #F2F2F2 !important; }
   .panel-body table i {
     font-size: 2rem;
     color: #5e636b; }
@@ -301,7 +303,7 @@ body {
     .panel-body table.flex-table tbody tr > td {
       border-top: none; }
     .panel-body table.flex-table tbody tr:not(:last-child) > td {
-      border-bottom: 1.5px solid #dee2e6; }
+      border-bottom: 1px solid #dee2e6; }
   .panel-body table.flex-table tr {
     width: 100%;
     display: flex; }
@@ -313,7 +315,7 @@ body {
     justify-content: start; }
   .panel-body table.flex-table .panel-body table tbody > tr {
     border: none !important;
-    border-bottom: 1.5px solid #dee2e6 !important;
+    border-bottom: 1px solid #dee2e6 !important;
     font-size: 1.4rem;
     color: #5e636b; }
   .panel-body table .checkbox {

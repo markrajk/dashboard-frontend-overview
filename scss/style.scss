@@ -407,6 +407,10 @@ body {
 
   & table {
 
+    & tbody > tr.active {
+      background-color: #F2F2F2!important;
+    }
+
     & i {
       font-size: 2rem;
       color: #5e636b;
@@ -460,7 +464,7 @@ body {
       }
 
       & tr:not(:last-child) > td {
-        border-bottom: 1.5px solid #dee2e6;
+        border-bottom: 1px solid #dee2e6;
       }
     }
     &.flex-table tr {
@@ -508,7 +512,7 @@ body {
 
     &.flex-table & tbody > tr  {
       border: none !important;
-      border-bottom: 1.5px solid #dee2e6 !important;
+      border-bottom: 1px solid #dee2e6 !important;
       font-size: 1.4rem;
       color: #5e636b;
     }
